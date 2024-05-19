@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpxc7yjhr05kv"
+path="res://.godot/imported/02. Cultist Base.mp3-c6545bd6c8739544e88877b534a9c773.mp3str"
+
+[deps]
+
+source_file="res://Scene/02. Cultist Base.mp3"
+dest_files=["res://.godot/imported/02. Cultist Base.mp3-c6545bd6c8739544e88877b534a9c773.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcclbm3x12vho"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_ghu1w"]
+
+[sub_resource type="Gradient" id="Gradient_lj33f"]
+colors = PackedColorArray(0.341176, 0, 0.929412, 1, 0.678431, 0, 0.752941, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_15sk4"]
+gradient = SubResource("Gradient_lj33f")
+fill_from = Vector2(0, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ghu1w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+scale = Vector2(18.0002, 10.078)
+texture = SubResource("GradientTexture2D_15sk4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 359.0
+offset_right = 142.0
+offset_bottom = 425.0
+scale = Vector2(3.98785, 3.27745)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Играть"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Выйти"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

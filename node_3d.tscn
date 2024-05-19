@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://e78o4xnx41tc"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.671603, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.903874, 0.4278, 0, -0.4278, 0.903874, 0, 2.84096, 3.79251)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.828013, -0.336199, 0.448738, -0.00155106, 0.798927, 0.601426, -0.560708, -0.498684, 0.661, 1.21892, 2.05496, 2.02121)
+spot_range = 3.6344
